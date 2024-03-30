@@ -14,7 +14,7 @@ def cpu_benchmark():
         cpu_percent = psutil.cpu_percent(interval=1, percpu=True)
         print(cpu_percent)
         cpu_scores.append(sum(cpu_percent) / len(cpu_percent))
-    avg_cpu_score = sum(cpu_scores) / len(cpu_scores) * 100
+    avg_cpu_score = sum(cpu_scores) / len(cpu_scores) * 10
     print("Average CPU Score:", avg_cpu_score)
     return avg_cpu_score
 
